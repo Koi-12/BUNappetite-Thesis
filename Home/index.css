@@ -24,8 +24,7 @@ body {
     background-position: center center;
     display: block;
     width: 100%;
-    height: 500px;
-    /* height: 100vh; *//* If you want fullscreen */
+    height: 90vh; 
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,6 +154,7 @@ body {
 }
 
 .titleBar {
+    font-weight: bold;
     z-index: 2;
     display: inline-block;
     background: rgba(0,0,0,.5);
@@ -171,6 +171,7 @@ body {
     transform: translate(-20px, 30px);
     transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
     opacity: 0;
+    font-weight: normal;
 }
 
 .titleBarTop .titleBar * {
@@ -436,6 +437,8 @@ sup{
     transition: .1s ease;
   }
  
+
+
 .title img {
   position: relative;
   display: block;
@@ -444,6 +447,8 @@ sup{
   width: 100%;
   max-width: 931px;
 }
+
+
 
 #some-box {background:#fff;padding:40px 0px 80px;font-family:'Poppins', sans-serif;}
 #some-box h2 {
@@ -602,7 +607,7 @@ article.row div {width:49.4%;display:inline-block;position:relative;border:1px s
 .title1 img {
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
   text-align : center;
   width: 100%;
   max-width: 931px;
@@ -610,7 +615,7 @@ article.row div {width:49.4%;display:inline-block;position:relative;border:1px s
 
 #some-box1 {
   background:#fff;
-  padding: 5em 0px 80px;
+  padding: 5px 0px 80px;
   font-family:'Poppins', sans-serif;
 }
 #some-box1 h2 {
@@ -764,69 +769,13 @@ article.row div {width:49.4%;display:inline-block;position:relative;border:1px s
   margin-top: -7px;
   width: 400px;
   font-size: 17px;
-  font-weight: lighter;
+  font-weight: normal;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
-}
-.third-course{
-  padding-top: 5em;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.third-course .side .side-comment h1 {
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #364F6B;
-  margin-bottom: 40px;
-}
-
-.third-course span {
-  max-width: 800px;
-  width: 70%;
-  border: 1px solid rgb(122, 119, 119);
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
-}
-
-.third-course p {
-  font-size: 18px;
-  color: #fff;
-}
-
-
-.paragraph-form p{
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
-  text-align: center;
-  max-width: 400px;
-  width: 350px;
-  font-size: 15px;
-  font-weight: lighter;
-  color: #000;
-}
-
-.span {
-  margin-top: 50px;
-  max-width: 800px;
-  width: 70%;
-  border: 1px solid rgb(122, 119, 119);
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
 }
 
 .section-third {
@@ -1355,146 +1304,35 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 }
 
 
-
+.third-course {
+  margin-top: 10rem;
+}
 
 .smain-container {  
   display: flex;
   flex-wrap: wrap;
-  background-color: #364F6B;
 }
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
-  flex: 30%;
-  background-color: #364F6B;
-  padding: 60px 50px;
-  margin-left: 30px;
+  flex: 50%;
+  background-color: #fff;
+  padding: 20px;
 }
-
-/* Main column */
 .main {
-  flex: 40%;
-  background-color: #364F6B;
-  padding: 20px 0px 30px;
+  flex: 50%;
+  background-color: #fff;
+  padding: 20px;
+}
+.main img {
+  width: 70%;
+  margin-left: 5rem;
+}
+.side img {
+  width: 70%;
+  margin-left: 5rem;
 }
 
-.side .side-comment h1 {
-  font-size: 16px;
-  font-weight: lighter;
-}
 
 
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  border-radius: 4px;
-}
-
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
-}
-
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  height: 300px;
-  background: #fff;
-  text-align: center;
-  line-height: 300px;
-}
-
-#slider ul li img {
-  width: 100%;
-}
-
-#slider a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: #f0f0f0;
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-#slider a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  transition: all 0.2s ease;
-  -webkit-transition: all 0.2s ease;
-}
-
-#slider a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-#slider a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-#slider .slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
-}
-
-.content-2 {
-  text-align: center;
-  height: 130px;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  bottom: 20.5%;
-  right: 0;
-  overflow: hidden;
-  width: 0;
-  border: none;
-  transition: 1s ease;
-}
-.content-2.loaded {
-  width: 100%;
-  border: none;
-}
-.first-letter,
-.second-letter,
-.third-letter {
-  color: #E2725A;
-  font-size: calc(20px + 1.5vw);
-  position: absolute;
-  text-align: center;
-  border: none;
-  margin: auto;
-  top: 100%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: all .75s ease;
-  font-size: 40px;
-  font-family: 'Poppins';
-  font-weight: 750;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
 
 
 
@@ -1623,14 +1461,28 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
 
+#about::before {
+  height: 0px;
+  width: 0px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #93683e;
+  margin: 0 auto;
+  content: "";
+  display: block;
+}
 
 
+.whynot {
+  background-image: url(images/redbackground.jpg);
+  background-size: cover;
+  height: 120vh;
+}
 
 .whynot h1{
-	color: #000;
-	font-size: 44px;
-	margin-top: 40px;
-	text-align: center;
+	color: #fff;
+	font-size: 60px;
+  padding: 6rem 6rem;
 }
 /*Sentence*/
 .whynot .sentence{
@@ -1642,6 +1494,7 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 .whynot .popEffect{
 	display: inline;
 	text-indent: 8px;
+  margin-left: 10px;
 }
 .whynot .popEffect span{
 	animation: pop 12.5s linear infinite 0s;
@@ -1672,6 +1525,23 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 	-ms-animation-delay: 10s;
 	-webkit-animation-delay: 10s;
 }
+@media screen and (max-width: 400px){
+  .whynot h1 {
+    padding: 20px 15px;
+    font-size: 40px;
+    width: 70%;
+  }
+  .whynot .popEffect{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 900px){
+  .whynot h1 {
+    padding: 20px 20px;
+  }
+}
+
+
 /*Pop Effect Animation*/
 @keyframes pop{
 	0% { opacity: 0; }

@@ -7,6 +7,11 @@
     --primary--blue: #83B5C0;
 }
 
+*::before, ::after { 
+    margin: 0;
+    padding: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -127,6 +132,10 @@ form input[type="number"]{
     background-color: #f4f6fa;
 }
 
+label:after {
+      content: " *";
+      color: red;	
+}
 label {
     display: block;
     margin-bottom: 0.5rem;
@@ -264,6 +273,17 @@ label {
         font-weight: normal;
         font-family: 'Poppins';
     }
+}
+
+#mybutton,
+#mybutton2 {
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right: 20px;
+    margin-top: -3.4rem;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
 

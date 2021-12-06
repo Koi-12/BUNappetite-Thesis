@@ -19,7 +19,7 @@ body {
   
 
   
-  /* Column container */
+  Column container
   .row {  
     display: flex;
     flex-wrap: wrap;

@@ -135,9 +135,9 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .links li .sub-menu .more-arrow{
   line-height: 40px;
 }
-.navbar .links li .htmlCss-more-sub-menu{
-  /* line-height: 40px; */
-}
+/* .navbar .links li .htmlCss-more-sub-menu{
+  /* line-height: 40px; 
+} */
 .navbar .links li .sub-menu .more-sub-menu{
   position: absolute;
   top: 0;
@@ -154,7 +154,7 @@ nav .navbar .links li:hover .js-sub-menu{
   height: 40px;
   width: 40px;    
 }
-.navbar .search-box i{
+.navbar .search-box a i{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -233,7 +233,6 @@ nav .navbar .links li:hover .js-sub-menu{
 @media (max-width:800px){
   nav{
     /* position: relative; */
-    padding: 20px 0 20px;
   }
   .navbar .bx-menu{
     display: block;
@@ -266,7 +265,6 @@ nav .navbar .links li:hover .js-sub-menu{
       color: #000;
       cursor: pointer;
   }
-
   .navbar .bx-menu{
       font-size: 25px;
       color: #000;
