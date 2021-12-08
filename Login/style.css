@@ -275,13 +275,12 @@ label {
     }
 }
 
-#mybutton,
-#mybutton2 {
+.showpwd {
     position: relative;
     z-index: 1;
     float: right;
     margin-right: 20px;
-    margin-top: -3.4rem;
+    margin-top: -3.2rem;
     cursor: pointer;
     opacity: 0.5;
 }

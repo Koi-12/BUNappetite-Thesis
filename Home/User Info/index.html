@@ -105,9 +105,9 @@
           <label>E-mail Address <br>
             <input type="email" name="Email" placeholder="Email Password">
           </label><br>
-          <label>Password <br>
-            <input type="password" name="password" placeholder="Password" >
-          </label><br>
+          <label for="pwd">Password <br>
+            <input type="password" name="password" id="pwd" placeholder="Password" />
+            <i class="fa fa-eye-slash showpwd" onClick="showPwd('pwd', this)"></i>
           <br>
           <button type="submit" name="submit">Save</button>
           </form>
@@ -125,16 +125,19 @@
         </div>
         <div class="info-1">
           <form action="#">
-          <label>Current Password <br>
-            <input type="password" name="currentpassword" placeholder="Current Password">
+          <label for="passwd">Current Password <br>
+            <input type="password" name="password" id="passwd" placeholder="Current Password" />
+            <i class="fa fa-eye-slash showpwd" onClick="showPwd('passwd', this)"></i>
           </label><br>
-          <label>New Password <br>
-            <input type="password" name="newpassword" placeholder="New Password" >
+          <label for="pswrd">New Password <br>
+            <input type="password" name="password" id="pswrd" placeholder="New Password" />
+            <i class="fa fa-eye-slash showpwd" onClick="showPwd('pswrd', this)"></i>
           </label>
           <p>Make sure your password is 8 characters long and contains letters and numbers</p>
           <br>
-          <label>Confirm Password <br>
-            <input type="password" name="confirmpassword" placeholder="Confirm Password" >
+          <label for="pword">Confirm Password <br>
+            <input type="password" name="password" id="pword" placeholder="Confirm Password" />
+            <i class="fa fa-eye-slash showpwd" onClick="showPwd('pword', this)"></i>
           </label><br>
           <br>
           <button type="submit" name="submit">Save</button>
@@ -589,6 +592,7 @@
   <script src="Order.js"></script>
   <script src="Modal.js"></script>
   <script src="Tabs(1).js"></script>
+  <script src="toggle-password.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
