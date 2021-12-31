@@ -378,7 +378,7 @@ body {
 }
 .textsection3 {
     background-color: #fff;
-    margin-top: -20em;
+    margin-top: 10rem;
     color: #111;
     text-align:  justify !important;
     padding: auto 12em auto 12em;
@@ -387,7 +387,7 @@ body {
     bottom: 19em;
   } 
   .textsection3 .glider {
-    margin: 2em 2em;
+    margin: 5em 2em;
   }
 
   .textsection3 .glider figure {

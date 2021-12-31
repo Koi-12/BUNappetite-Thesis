@@ -19,7 +19,7 @@ body {
   
 
   
-  Column container
+  /* Column container */
   .row {  
     display: flex;
     flex-wrap: wrap;
@@ -92,7 +92,7 @@ body {
 
   .name h1{
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: normal;
   }
 
   .details {

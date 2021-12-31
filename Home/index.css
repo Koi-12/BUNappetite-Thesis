@@ -235,7 +235,7 @@ body {
 	display: block;
 	border-radius: 50px;
 	box-shadow: inset  0 0 0 2px rgba(255,255,255,0.2);
-	z-index: 0;
+	z-index: 2;
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(15px);
@@ -438,17 +438,14 @@ sup{
   }
  
 
-
 .title img {
   position: relative;
   display: block;
-  margin: 0 auto;
+  margin: 7rem auto 0 auto;
   text-align : center;
   width: 100%;
   max-width: 931px;
-}
-
-
+} 
 
 #some-box {background:#fff;padding:40px 0px 80px;font-family:'Poppins', sans-serif;}
 #some-box h2 {
@@ -1248,70 +1245,10 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 
 
 
-
-@media only screen and (max-width: 1200px) {
-    
-  .title img {
-    max-width: 950px;
-  }
-
-}
-
-@media only screen and (max-width: 1300px) {
-    
-  .title img {
-    max-width: 970px;
-  }
-
-}
-@media only screen and (max-width: 1400px) {
-    
-  .title img {
-    max-width: 1070px;
-  }
-
-}
-
-@media only screen and (max-width: 1500px) {
-    
-  .title img {
-    max-width: 1170px;
-  }
-
-}
-@media only screen and (max-width: 1600px) {
-    
-  .title img {
-    max-width: 1268px;
-  }
-
-}
-
-@media only screen and (max-width: 1700px) {
-    
-  .title img {
-    max-width: 1368px;
-  }
-
-}
-
-@media only screen and (max-width: 1800px) {
-    
-  .title img {
-    max-width: 1468px;
-  }
-
-}
-
-
 .third-course {
   margin-top: 10rem;
 }
 
-.smain-container {  
-  display: flex;
-  flex-wrap: wrap;
-}
 .side {
   flex: 50%;
   background-color: #fff;
@@ -1330,10 +1267,6 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
   width: 70%;
   margin-left: 5rem;
 }
-
-
-
-
 
 
 #giftbox-container {
@@ -1578,6 +1511,191 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 	30% { opacity: 0; -ms-transform: translateY(0px); }
 	80% { opacity: 0; }
 	100% { opacity: 0; }
+}
+
+.come-visit {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.come-visit .visit-us {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 2.1rem;
+}
+
+.come-visit .visit-us span {
+  font-family: 'Pacifico';
+  color: #f8a74d;
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.come-visit .location-store {
+  display: inline-flex;
+  justify-content: center;
+}
+.come-visit .location-store .location,
+.come-visit .location-store .store-hours {
+  width: 40%;
+  margin-top: 15px;
+}
+
+.come-visit .location-store .location p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: right; 
+}
+.come-visit .location-store .store-hours p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left; 
+}
+
+.come-visit .location-store p span {
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: #f8a74d;
+}
+
+.vl {
+  border-left: 2px solid #606063;
+  height: 210px;
+  margin: 0px 50px 0px 50px;
+}
+
+.vl::after{
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: -14rem 0 10px -6.6px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #353746;
+}
+
+.vl::before {
+  content: '';
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin: 13rem 0 0 -6.6px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #353746;
+}
+
+
+@media screen and (max-width: 900px){
+.come-visit .location-store .location,
+.come-visit .location-store .store-hours {
+  width: 45%;
+}
+.vl {
+  margin: 0px 20px 0px 20px;
+}
+}
+
+.textsection3 {
+  background-color: #fff;
+  color: #111;
+  text-align:  justify !important;
+  font-family: 'Poppins';
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+
+} 
+.textsection3 .glider {
+  margin: 5em 2em;
+}
+
+.textsection3 .glider figure {
+  background-color: #364a62;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.textsection3 .glider figure .classic-wrap,
+.textsection3 .glider figure .frap-wrap {
+  flex: 50%;
+}
+
+.textsection3 .glider figure .classic-wrap::before,
+.textsection3 .glider figure .frap-wrap::before{
+  content: attr(title);
+  position: relative;
+  line-height: 20px;
+  font-size: 25px;
+  top: -13px;
+  padding: 15px 40px;
+  left: 20px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: linear-gradient(90deg, rgba(226,114,90,1) 46%, rgba(255,201,106,1) 100%);
+  border-radius: 50px;
+}
+
+.textsection3 .glider figure .classic-content,
+.textsection3 .glider figure .frap-content {
+  padding: 40px 40px 50px 40px;
+  color: #fff;
+}
+.textsection3 .glider figure .image-content2 {
+  flex: 50%;
+}
+
+.textsection3 .glider figure .image-content{
+  flex: 50%;
+  padding: 0 0 0 6rem ;
+}
+.textsection3 .glider figure .image-content img {
+  width: 80%;
+}
+.textsection3 .glider figure .image-content2 img {
+  width: 90%;
+}
+
+.textsection3 .glider figure .classic-wrap a,
+.textsection3 .glider figure .frap-wrap a{
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #E2725A;
+  padding: 12px 40px;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: 0.3s ease ;
+}
+
+.textsection3 .glider figure .classic-wrap a:hover,
+.textsection3 .glider figure .frap-wrap a:hover {
+  color: #fff;
+  background-color: #E2725A;
+}
+
+
+.glider-prev {
+  margin-left: 1em;
+  margin-top: 1em;
+}
+.glider-next {
+  margin-right: 1em;
+  margin-top: 1em;
+} 
+
+@media screen and (max-width: 700px) {
+  .textsection3 .glider figure {   
+    flex-direction: column;
+  }
+
 }
 
 

@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    <link rel="stylesheet" href="index.css">
    <link rel="stylesheet" href="mystyle.css">
+   <link rel="stylesheet" href="glider.css">
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,17 +67,29 @@
 		</svg>
 	</div>
 
-   <div class="icons-social">  
-         <a data-aos="fade-left" data-aos-duration="600" data-aos-delay="400" href="#"><i class="fab fa-facebook-f"></i></a>
-         <a data-aos="fade-left" data-aos-duration="600" data-aos-delay="300" href="#"><i class="fab fa-instagram"></i></a>
-         <a data-aos="fade-left" data-aos-duration="600" data-aos-delay="200" href="#"><i class="fa fa-envelope"></i></a>
-         <a data-aos="fade-left" data-aos-duration="600" data-aos-delay="100" href="#"><i class="fa fa-phone-alt"></i></a>
-   </div>   
-  <div class="title"><img src="images/title.svg" alt="title"></div>
-
-  <section class="section-first" id="top">
-    <div id="some-box">
     
+   
+  <section class="section-first" id="top">
+   
+
+    <div class="title">
+      <img src="images/title.svg" alt="title">
+    </div>
+
+    <div class="come-visit">
+      <p class="visit-us"><span>Come Visit Us</span><br>TODAY</p>
+      <div class="location-store">
+        <div class="location">
+          <p><span>Location</span><br>2238 Juan Luna St.<br> Gagalangin, Tondo, Manila, Philippines</p>
+        </div>
+        <div class="vl"></div>
+        <div class="store-hours">
+          <p><span>Store Hours</span><br>Monday - Sunday <br>4:30 AM (Pandesal and other breads only)<br> 8:00 AM for other products <br> UNTIL 10:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="some-box">
       <article class="row" id="idea-one">
         <div><figure class="imghvr-blur">
           <img src="images/pic1.svg" alt="pic1">
@@ -199,10 +212,10 @@
         <div class="Premium-series">
           <p>Premium Series</p>
           <ul>
-            <li><a href="#"></a>Sample</li>
-            <li><a href="#"></a>Sample</li>
-            <li><a href="#"></a>Sample</li>
-            <li><a href="#"></a>Sample</li>
+            <li><a href="#"></a>Matcha</li>
+            <li><a href="#"></a>Thai</li>
+            <li><a href="#"></a>Okinawa</li>
+            <li><a href="#"></a>Taro</li>
           </ul>
         </div>
         <div class="Mpic5">
@@ -216,14 +229,40 @@
       </div>
       <div class="third-course">
  
-        <div class="smain-container">
-          <div class="side">
-            <h1>Want some more?</h1>
-          </div>
-          <div class="main">
-            <img src="images/milkteav.png" alt="milkteav">
-          </div>
-        </div>        
+        <div class="textsection3 multiple">
+
+          <button class="glider-prev">
+              <i class="fa fa-chevron-left"></i>
+          </button>
+      
+            <div class="glider">
+              <figure>
+                <div class="classic-wrap" title="Classic MilkTea Series">
+                  <p class="classic-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, reprehenderit aperiam! Officiis nisi aliquid laborum fuga nostrum odio deserunt officia nam modi numquam. Sunt aspernatur, nisi debitis unde dolores perferendis?</p>
+                  <a href="#">Go Shop</a>
+                </div>
+                <div class="image-content2">
+                <img src="images/class-series.png" alt="milktea">
+                </div>
+              </figure>      
+              <figure>
+                <div class="frap-wrap" title="Frappucino Series">
+                  <p class="frap-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, reprehenderit aperiam! Officiis nisi aliquid laborum fuga nostrum odio deserunt officia nam modi numquam. Sunt aspernatur, nisi debitis unde dolores perferendis?</p>
+                  <a href="#">Go Shop</a>
+                </div>
+                <div class="image-content">
+                <img src="images/frap-series.png" alt="milktea">
+                </div>
+              </figure>
+            </div>
+      
+            <button class="glider-next">
+              <i class="fa fa-chevron-right"></i>
+          </button>
+      
+            <div id="dots" class="glider-dots"></div>
+           
+        </div>       
 
       </div>
 
@@ -483,6 +522,20 @@
     <script src="wrotation.js"></script>
     <script src="BacktoTop.js"></script>
     <script src="two-side.js"></script>
+    <script src="glider.js"></script>
+    <script>
+    
+       new Glider(document.querySelector('.glider'), {
+           slideToShow: 1,
+           draggable:true,
+           dots: '#dots',
+           arrows: {
+             prev: '.glider-prev',
+             next: '.glider-next'
+           }
+       });
+    
+    </script>
 
 </body>
 </html>
