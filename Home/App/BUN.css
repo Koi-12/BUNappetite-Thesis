@@ -28,6 +28,7 @@ body {
 
 .imagebackground {
     position: relative;
+    margin-top: 4.1em;
     height: 500px;
     z-index: -1;
     background: url(images/backgroundpng.png) no-repeat center;
@@ -64,9 +65,8 @@ body {
     margin-bottom: 8px;
 }
 .paragraph img {
-    width: 45%;
-    margin-right: 15px;
-    margin-top: -2em;
+    width: 30%;
+    margin-top: -10px;
     cursor: pointer;
 }
 
@@ -1409,8 +1409,7 @@ body {
         margin-top: -3px;
     }
     .paragraph img {
-        width: 45%;
-        margin-right: 15px;
+        width: 20%;   
         margin-top: 10px;
     }
     .scrolls h1 {
@@ -1958,10 +1957,12 @@ body {
 
 ::-webkit-scrollbar {
     width: 6px;
-} 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-} 
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-}
+  } 
+  ::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+    display: none;
+  } 
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 10px rgb(104, 103, 103); 
+    border-radius: 5px;
+  }

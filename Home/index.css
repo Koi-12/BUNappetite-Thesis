@@ -1386,12 +1386,12 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
   width: 6px;
 } 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  */
+  display: none;
 } 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-box-shadow: inset 0 0 10px rgb(104, 103, 103); 
+  border-radius: 5px;
 }
 
 #about::before {

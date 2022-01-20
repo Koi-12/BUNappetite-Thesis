@@ -33,6 +33,7 @@ body {
   
   /* Column container */
   .row {  
+    margin-top: 4.2em;
     display: flex;
     flex-wrap: wrap;
   }
