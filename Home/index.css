@@ -822,68 +822,6 @@ article.row div {width:49.4%;display:inline-block;position:relative;border:1px s
   padding-top: 5px;
 }
 
-.Noodles-section .Noodle-title{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.Noodle-title h1 {
-  color: #E2725A;
-  border-bottom: 1px solid #fff;
-  width: 140px;
-  font-size: 30px;
-  max-width: 500px;
-  margin: 50px auto 0 auto;
-  right: 0;
-  left: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.Noodle-title p {
-  color: #fff;
-  width: 450px;
-  max-width: 500px;
-  margin: 10px auto 0 auto;
-  right: 0;
-  left: 0;
-  text-align: center;
-}
-
-.Noodle-bottom {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 7em;
-}
-
-.Noodle-bottom h1 {
-  color: #E2725A;
-  border-bottom: 1px solid #fff;
-  width: 125px;
-  max-width: 500px;
-  margin: 50px auto 0 auto;
-  right: 0;
-  left: 0;
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.Noodle-bottom ul li{
-  color: #fff;
-  display: inline-flex;
-  margin: 20px 40px 0 15px;
-  right: 0;
-  left: 0;
-  text-align: center;
-}
-.Noodle-bottom .bnb{
-  text-align: center;
-  margin: 2em auto 0 auto ;
-}
-
 
 .Gift-boxes{
   text-align: center;
@@ -1471,7 +1409,10 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 @media screen and (max-width: 900px){
   .whynot h1 {
     padding: 20px 20px;
+    font-size: 40px;
+    width: 70%;
   }
+  
 }
 
 
@@ -1692,13 +1633,73 @@ If we had 3 boxes, we could draw them in order C, A, B by writing div:first-of-t
 } 
 
 @media screen and (max-width: 700px) {
-  .textsection3 .glider figure {   
-    flex-direction: column;
-  }
-
+ .third-course {
+   display: none;
+ }
 }
 
+.textsection4 {
+  background-color: #fff;
+  color: #111;
+  text-align:  justify !important;
+  font-family: 'Poppins';
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
 
+} 
 
+.textsection4 .glider figure {
+  background-color: #364a62;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.textsection4 .glider figure:before {
+  content: attr(title);
+  position: relative;
+  line-height: 20px;
+  font-size: 20px;
+  top: -30px;
+  padding: 15px 40px;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: linear-gradient(90deg, rgba(226,114,90,1) 46%, rgba(255,201,106,1) 100%);
+  border-radius: 50px;
+} 
 
+.textsection4 h1 {
+  text-align: center;
+  margin: 10px auto 10px auto;
+  right: 0;
+  left: 0;
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 20px;
+}
 
+.textsection4 .glider figure img {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  right: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .third-course2 {
+    display: none;
+  }
+ }
+@media screen and (max-width: 400px) {
+  .textsection4 .glider figure:before{
+    font-size: 12px;
+    padding: 15px 20px;
+  }
+  .textsection4 .glider figure img {
+    width: 70%;
+  }
+}
