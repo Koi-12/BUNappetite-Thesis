@@ -225,12 +225,103 @@ body {
   padding: 30px 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-#order-history h1{
-  margin-bottom: 3rem;
+#order-history .in-between h2{
+  margin-bottom: 1rem;
 }
 
 #order-history p {
   font-weight: 500;
+}
+
+#order-history .in-between a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#order-history .in-between a:hover {
+  color: #222222
+}
+
+/* Dropdown */
+
+#order-history .in-between .dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+#order-history .in-between .dd-button {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px 40px 8px 15px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#order-history .in-between .dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+#order-history .in-between .dd-button:hover {
+  background-color: #eeeeee;
+}
+
+
+#order-history .in-between .dd-input {
+  display: none;
+}
+
+#order-history .in-between .dd-menu {
+  position: absolute;
+  top: 100%;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+#order-history .in-between .dd-input + .dd-menu {
+  display: none;
+} 
+
+#order-history .in-between .dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+#order-history .in-between .dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#order-history .in-between .dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+#order-history .in-between .dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+#order-history .in-between .dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
 }
 
 /* Order History Tablee */
