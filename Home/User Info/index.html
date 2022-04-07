@@ -17,10 +17,10 @@
   <nav>
     <div class="navbar">
       <i class='bx bx-menu'></i>
-      <div class="logo"><a href="../index.html"><img src="images/newlogo.png" alt="bunappetite"></a></div>
+      <div class="logo"><a href="../index.html"><img src="images/newlogo.svg" alt="bunappetite"></a></div>
       <div class="nav-links">
         <div class="sidebar-logo">
-          <span class="logo-name"><img src="images/newlogo.png" alt="bunappetite"></span>
+          <span class="logo-name"><img src="images/newlogo.svg" alt="bunappetite"></span>
           <i class="fas fa-times fa-xs"></i>
         </div>
         <ul class="links">
@@ -77,7 +77,7 @@
             <input type="date" name="birthdate" >
           </label><br>
           <label>Phone Number <br>
-            <input type="number" name="phonenumber" placeholder="Phone Number">
+            <input type="number" name="phonenumber" placeholder="Phone Number" maxlength="11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
           </label>
           <p> Keep 11-digit format with no spaces and dashes </p>
           <br>
@@ -515,7 +515,7 @@
       </header>
       <div class="modal--content"></div>
       <footer class="modal--footer">
-        <button  onclick="" data-modal-close>Proceed</button>
+        <button  onclick="" data-modal-close><a href="../Login/index.html" style="text-decoration: none; color:#000;">Proceed</a> </button>
         <button style="background-color: red; color: #fff;" onclick="Modal.close(event)" data-modal-close>Close</button>
       </footer>
     </div>
